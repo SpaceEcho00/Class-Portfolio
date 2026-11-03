@@ -68,6 +68,7 @@
     <Content Include="Checkbox.aspx" />
     <Content Include="Dashboard.aspx" />
     <Content Include="dropdownlist.aspx" />
+    <Content Include="EmployeePay.aspx" />
     <Content Include="FindJobs.aspx" />
     <Content Include="First.aspx" />
     <Content Include="Grading.aspx" />
@@ -107,6 +108,13 @@
     </Compile>
     <Compile Include="dropdownlist.aspx.designer.cs">
       <DependentUpon>dropdownlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeePay.aspx.cs">
+      <DependentUpon>EmployeePay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeePay.aspx.designer.cs">
+      <DependentUpon>EmployeePay.aspx</DependentUpon>
     </Compile>
     <Compile Include="FindJobs.aspx.cs">
       <DependentUpon>FindJobs.aspx</DependentUpon>
