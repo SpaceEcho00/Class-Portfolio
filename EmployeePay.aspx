@@ -5,7 +5,7 @@
     <p>
         <asp:Label ID="lblJobTitle" runat="server" Text="Select Job Title"></asp:Label>
         <br />
-        <asp:DropDownList ID="ddlJobTitle" runat="server" Width="100%">
+        <asp:DropDownList ID="ddlJobTitle" runat="server" Width="100%" OnSelectedIndexChanged="ddlJobTitle_SelectedIndexChanged">
             <asp:ListItem>Engineer</asp:ListItem>
             <asp:ListItem>Intern</asp:ListItem>
             <asp:ListItem>DatabaseAdministrator</asp:ListItem>

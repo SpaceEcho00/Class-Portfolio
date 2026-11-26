@@ -11,34 +11,43 @@ namespace Class_Portfolio
 {
 
 
-    public partial class Site1
+    public partial class loops
     {
 
         /// <summary>
-        /// head control.
+        /// btnforloop control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.Button btnforloop;
 
         /// <summary>
-        /// form1 control.
+        /// btnwhileloop control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Button btnwhileloop;
 
         /// <summary>
-        /// ContentPlaceHolder1 control.
+        /// btndowhile control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.Button btndowhile;
+
+        /// <summary>
+        /// lstNumbers control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListBox lstNumbers;
     }
 }

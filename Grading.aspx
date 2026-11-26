@@ -11,7 +11,7 @@
         <div style="height: 464px">
             <asp:Label ID="Label1" runat="server" Text="Cat Marks (Out of 10)"></asp:Label>
             <br />
-            <asp:TextBox ID="txtCatMark" runat="server" Width="1196px"></asp:TextBox>
+            <asp:TextBox ID="txtCatMark" runat="server" Width="1196px" OnTextChanged="txtCatMark_TextChanged"></asp:TextBox>
             <br />
             <asp:Label ID="Label2" runat="server" Text="Attendance (Out of 5)"></asp:Label>
             <br />

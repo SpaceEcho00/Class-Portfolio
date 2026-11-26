@@ -28,5 +28,10 @@ namespace Class_Portfolio
             Pnllogin.Visible = false;
 
         }
+
+        protected void CreateUserWizard1_CreatedUser(object sender, EventArgs e)
+        {
+
+        }
     }
 }

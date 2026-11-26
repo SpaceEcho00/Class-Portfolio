@@ -49,5 +49,10 @@ namespace Class_Portfolio
             lblTransport.Text = "Transport Allowance: " + transportAllowance.ToString();
             lblGross.Text = "Gross Pay: " + grossPay.ToString();
         }
+
+        protected void ddlJobTitle_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

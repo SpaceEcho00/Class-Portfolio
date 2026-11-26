@@ -1,5 +1,4 @@
 ﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -43,10 +42,117 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=10.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.10.0.3\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.Cryptography, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.Cryptography.8.0.0\lib\net462\Microsoft.Bcl.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.TimeProvider, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.TimeProvider.8.0.1\lib\net462\Microsoft.Bcl.TimeProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\lib\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Data.SqlClient, Version=7.0.0.0, Culture=neutral, PublicKeyToken=23ec7fc2d6eaa4a5, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Data.SqlClient.7.1.2\lib\net462\Microsoft.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.SqlClient.Extensions.Abstractions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=23ec7fc2d6eaa4a5, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Data.SqlClient.Extensions.Abstractions.7.1.2\lib\netstandard2.0\Microsoft.Data.SqlClient.Extensions.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.SqlClient.Internal.Logging, Version=7.0.0.0, Culture=neutral, PublicKeyToken=23ec7fc2d6eaa4a5, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Data.SqlClient.Internal.Logging.7.1.2\lib\netstandard2.0\Microsoft.Data.SqlClient.Internal.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Abstractions, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Caching.Abstractions.8.0.0\lib\net462\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Memory, Version=8.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Caching.Memory.8.0.1\lib\net462\Microsoft.Extensions.Caching.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=8.0.0.2, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2\lib\net462\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=8.0.0.2, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=8.0.0.2, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Options.8.0.2\lib\net462\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Primitives.8.0.0\lib\net462\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Abstractions, Version=8.16.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.IdentityModel.Abstractions.8.16.0\lib\net472\Microsoft.IdentityModel.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.JsonWebTokens, Version=8.16.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.IdentityModel.JsonWebTokens.8.16.0\lib\net472\Microsoft.IdentityModel.JsonWebTokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Logging, Version=8.16.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.IdentityModel.Logging.8.16.0\lib\net472\Microsoft.IdentityModel.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Protocols, Version=8.16.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.IdentityModel.Protocols.8.16.0\lib\net472\Microsoft.IdentityModel.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect, Version=8.16.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.IdentityModel.Protocols.OpenIdConnect.8.16.0\lib\net472\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens, Version=8.16.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.IdentityModel.Tokens.8.16.0\lib\net472\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.6.1\lib\net462\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.Common.4.3.0\lib\net451\System.Data.Common.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=10.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Diagnostics.DiagnosticSource.10.0.3\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=8.16.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\System.IdentityModel.Tokens.Jwt.8.16.0\lib\net472\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipelines, Version=10.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.IO.Pipelines.10.0.3\lib\net462\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.6.3\lib\net462\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.6.1\lib\net462\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.1.2\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.Cryptography.Pkcs, Version=8.0.0.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Cryptography.Pkcs.8.0.2\lib\net462\System.Security.Cryptography.Pkcs.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=10.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Encodings.Web.10.0.3\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=10.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Json.10.0.3\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Channels, Version=10.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Channels.10.0.3\lib\net462\System.Threading.Channels.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.RateLimiting, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.RateLimiting.8.0.0\lib\net462\System.Threading.RateLimiting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.6.3\lib\net462\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -65,8 +171,46 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".gitattributes" />
+    <Content Include=".gitignore" />
+    <Content Include="bin\Class Portfolio.dll" />
+    <Content Include="bin\Class Portfolio.pdb" />
+    <Content Include="bin\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <Content Include="bin\Microsoft.Bcl.Cryptography.dll" />
+    <Content Include="bin\Microsoft.Bcl.TimeProvider.dll" />
+    <Content Include="bin\Microsoft.Data.SqlClient.dll" />
+    <Content Include="bin\Microsoft.Data.SqlClient.Extensions.Abstractions.dll" />
+    <Content Include="bin\Microsoft.Data.SqlClient.Internal.Logging.dll" />
+    <Content Include="bin\Microsoft.Extensions.Caching.Abstractions.dll" />
+    <Content Include="bin\Microsoft.Extensions.Caching.Memory.dll" />
+    <Content Include="bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <Content Include="bin\Microsoft.Extensions.Logging.Abstractions.dll" />
+    <Content Include="bin\Microsoft.Extensions.Options.dll" />
+    <Content Include="bin\Microsoft.Extensions.Primitives.dll" />
+    <Content Include="bin\Microsoft.IdentityModel.Abstractions.dll" />
+    <Content Include="bin\Microsoft.IdentityModel.JsonWebTokens.dll" />
+    <Content Include="bin\Microsoft.IdentityModel.Logging.dll" />
+    <Content Include="bin\Microsoft.IdentityModel.Protocols.dll" />
+    <Content Include="bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" />
+    <Content Include="bin\Microsoft.IdentityModel.Tokens.dll" />
+    <Content Include="bin\System.Buffers.dll" />
+    <Content Include="bin\System.Diagnostics.DiagnosticSource.dll" />
+    <Content Include="bin\System.IdentityModel.Tokens.Jwt.dll" />
+    <Content Include="bin\System.IO.Pipelines.dll" />
+    <Content Include="bin\System.Memory.dll" />
+    <Content Include="bin\System.Numerics.Vectors.dll" />
+    <Content Include="bin\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="bin\System.Security.Cryptography.Pkcs.dll" />
+    <Content Include="bin\System.Text.Encodings.Web.dll" />
+    <Content Include="bin\System.Text.Json.dll" />
+    <Content Include="bin\System.Threading.Channels.dll" />
+    <Content Include="bin\System.Threading.RateLimiting.dll" />
+    <Content Include="bin\System.Threading.Tasks.Extensions.dll" />
     <Content Include="Checkbox.aspx" />
+    <Content Include="dashbar.aspx" />
     <Content Include="Dashboard.aspx" />
+    <Content Include="DatabaseDemo.aspx" />
+    <Content Include="DatabaseSetup.sql" />
     <Content Include="dropdownlist.aspx" />
     <Content Include="EmployeePay.aspx" />
     <Content Include="FindJobs.aspx" />
@@ -77,12 +221,625 @@
     <Content Include="Images\images.jpg" />
     <Content Include="Images\imags.jpg" />
     <Content Include="logiinform.aspx" />
+    <Content Include="loops.aspx" />
+    <Content Include="obj\Debug\Class Portfolio.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Class Portfolio.dll" />
+    <Content Include="obj\Debug\Class Portfolio.pdb" />
+    <Content Include="obj\Debug\TempPE\DataSet1.Designer.cs.dll" />
+    <Content Include="packages\Microsoft.Bcl.AsyncInterfaces.10.0.3\Icon.png" />
+    <Content Include="packages\Microsoft.Bcl.AsyncInterfaces.10.0.3\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <Content Include="packages\Microsoft.Bcl.AsyncInterfaces.10.0.3\lib\net462\Microsoft.Bcl.AsyncInterfaces.xml" />
+    <Content Include="packages\Microsoft.Bcl.AsyncInterfaces.10.0.3\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <Content Include="packages\Microsoft.Bcl.AsyncInterfaces.10.0.3\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.xml" />
+    <Content Include="packages\Microsoft.Bcl.AsyncInterfaces.10.0.3\lib\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <Content Include="packages\Microsoft.Bcl.AsyncInterfaces.10.0.3\lib\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.xml" />
+    <Content Include="packages\Microsoft.Bcl.AsyncInterfaces.10.0.3\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\Microsoft.Bcl.AsyncInterfaces.10.0.3\useSharedDesignerContext.txt" />
+    <Content Include="packages\Microsoft.Bcl.Cryptography.8.0.0\Icon.png" />
+    <Content Include="packages\Microsoft.Bcl.Cryptography.8.0.0\lib\net462\Microsoft.Bcl.Cryptography.dll" />
+    <Content Include="packages\Microsoft.Bcl.Cryptography.8.0.0\lib\net462\Microsoft.Bcl.Cryptography.xml" />
+    <Content Include="packages\Microsoft.Bcl.Cryptography.8.0.0\lib\net8.0\Microsoft.Bcl.Cryptography.dll" />
+    <Content Include="packages\Microsoft.Bcl.Cryptography.8.0.0\lib\net8.0\Microsoft.Bcl.Cryptography.xml" />
+    <Content Include="packages\Microsoft.Bcl.Cryptography.8.0.0\lib\netstandard2.0\Microsoft.Bcl.Cryptography.dll" />
+    <Content Include="packages\Microsoft.Bcl.Cryptography.8.0.0\lib\netstandard2.0\Microsoft.Bcl.Cryptography.xml" />
+    <Content Include="packages\Microsoft.Bcl.Cryptography.8.0.0\LICENSE.TXT" />
+    <Content Include="packages\Microsoft.Bcl.Cryptography.8.0.0\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\Microsoft.Bcl.Cryptography.8.0.0\useSharedDesignerContext.txt" />
+    <Content Include="packages\Microsoft.Bcl.TimeProvider.8.0.1\Icon.png" />
+    <Content Include="packages\Microsoft.Bcl.TimeProvider.8.0.1\lib\net462\Microsoft.Bcl.TimeProvider.dll" />
+    <Content Include="packages\Microsoft.Bcl.TimeProvider.8.0.1\lib\net462\Microsoft.Bcl.TimeProvider.xml" />
+    <Content Include="packages\Microsoft.Bcl.TimeProvider.8.0.1\lib\net8.0\Microsoft.Bcl.TimeProvider.dll" />
+    <Content Include="packages\Microsoft.Bcl.TimeProvider.8.0.1\lib\net8.0\Microsoft.Bcl.TimeProvider.xml" />
+    <Content Include="packages\Microsoft.Bcl.TimeProvider.8.0.1\lib\netstandard2.0\Microsoft.Bcl.TimeProvider.dll" />
+    <Content Include="packages\Microsoft.Bcl.TimeProvider.8.0.1\lib\netstandard2.0\Microsoft.Bcl.TimeProvider.xml" />
+    <Content Include="packages\Microsoft.Bcl.TimeProvider.8.0.1\LICENSE.TXT" />
+    <Content Include="packages\Microsoft.Bcl.TimeProvider.8.0.1\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\Microsoft.Bcl.TimeProvider.8.0.1\useSharedDesignerContext.txt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\icons\dotnet.png" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\lib\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\lib\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tasks\DotNetCompilerPlatformTasks.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tasks\System.Management.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tools\Roslyn-4.1.0\csc.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tools\Roslyn-4.1.0\csi.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tools\Roslyn-4.1.0\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tools\Roslyn-4.1.0\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tools\Roslyn-4.1.0\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tools\Roslyn-4.1.0\Microsoft.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tools\Roslyn-4.1.0\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tools\Roslyn-4.1.0\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tools\Roslyn-4.1.0\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tools\Roslyn-4.1.0\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tools\Roslyn-4.1.0\System.Buffers.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tools\Roslyn-4.1.0\System.Collections.Immutable.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tools\Roslyn-4.1.0\System.Memory.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tools\Roslyn-4.1.0\System.Numerics.Vectors.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tools\Roslyn-4.1.0\System.Reflection.Metadata.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tools\Roslyn-4.1.0\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tools\Roslyn-4.1.0\System.Text.Encoding.CodePages.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tools\Roslyn-4.1.0\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tools\Roslyn-4.1.0\vbc.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tools\Roslyn-4.1.0\VBCSCompiler.exe" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\dotnet.png" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net462\cs\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net462\de\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net462\es\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net462\fr\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net462\it\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net462\ja\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net462\ko\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net462\Microsoft.Data.SqlClient.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net462\Microsoft.Data.SqlClient.xml" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net462\pl\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net462\pt-BR\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net462\ru\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net462\tr\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net462\zh-Hans\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net462\zh-Hant\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net8.0\cs\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net8.0\de\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net8.0\es\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net8.0\fr\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net8.0\it\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net8.0\ja\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net8.0\ko\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net8.0\Microsoft.Data.SqlClient.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net8.0\Microsoft.Data.SqlClient.xml" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net8.0\pl\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net8.0\ru\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net8.0\tr\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net9.0\cs\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net9.0\de\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net9.0\es\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net9.0\fr\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net9.0\it\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net9.0\ja\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net9.0\ko\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net9.0\Microsoft.Data.SqlClient.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net9.0\Microsoft.Data.SqlClient.xml" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net9.0\pl\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net9.0\pt-BR\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net9.0\ru\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net9.0\tr\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net9.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\net9.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\netstandard2.0\Microsoft.Data.SqlClient.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\lib\netstandard2.0\Microsoft.Data.SqlClient.xml" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\ref\net462\Microsoft.Data.SqlClient.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\ref\net462\Microsoft.Data.SqlClient.xml" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\ref\net8.0\Microsoft.Data.SqlClient.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\ref\net8.0\Microsoft.Data.SqlClient.xml" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\ref\net9.0\Microsoft.Data.SqlClient.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\ref\net9.0\Microsoft.Data.SqlClient.xml" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\ref\netstandard2.0\Microsoft.Data.SqlClient.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\ref\netstandard2.0\Microsoft.Data.SqlClient.xml" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\runtimes\win\lib\net462\Microsoft.Data.SqlClient.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.Extensions.Abstractions.7.1.2\dotnet.png" />
+    <Content Include="packages\Microsoft.Data.SqlClient.Extensions.Abstractions.7.1.2\lib\netstandard2.0\Microsoft.Data.SqlClient.Extensions.Abstractions.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.Extensions.Abstractions.7.1.2\lib\netstandard2.0\Microsoft.Data.SqlClient.Extensions.Abstractions.xml" />
+    <Content Include="packages\Microsoft.Data.SqlClient.Internal.Logging.7.1.2\dotnet.png" />
+    <Content Include="packages\Microsoft.Data.SqlClient.Internal.Logging.7.1.2\lib\netstandard2.0\Microsoft.Data.SqlClient.Internal.Logging.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.Internal.Logging.7.1.2\lib\netstandard2.0\Microsoft.Data.SqlClient.Internal.Logging.xml" />
+    <Content Include="packages\Microsoft.Data.SqlClient.SNI.7.1.2\buildTransitive\net462\Microsoft.Data.SqlClient.SNI.arm64.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.SNI.7.1.2\buildTransitive\net462\Microsoft.Data.SqlClient.SNI.arm64.pdb" />
+    <Content Include="packages\Microsoft.Data.SqlClient.SNI.7.1.2\buildTransitive\net462\Microsoft.Data.SqlClient.SNI.x64.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.SNI.7.1.2\buildTransitive\net462\Microsoft.Data.SqlClient.SNI.x64.pdb" />
+    <Content Include="packages\Microsoft.Data.SqlClient.SNI.7.1.2\buildTransitive\net462\Microsoft.Data.SqlClient.SNI.x86.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.SNI.7.1.2\buildTransitive\net462\Microsoft.Data.SqlClient.SNI.x86.pdb" />
+    <Content Include="packages\Microsoft.Data.SqlClient.SNI.7.1.2\build\net462\Microsoft.Data.SqlClient.SNI.arm64.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.SNI.7.1.2\build\net462\Microsoft.Data.SqlClient.SNI.arm64.pdb" />
+    <Content Include="packages\Microsoft.Data.SqlClient.SNI.7.1.2\build\net462\Microsoft.Data.SqlClient.SNI.x64.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.SNI.7.1.2\build\net462\Microsoft.Data.SqlClient.SNI.x64.pdb" />
+    <Content Include="packages\Microsoft.Data.SqlClient.SNI.7.1.2\build\net462\Microsoft.Data.SqlClient.SNI.x86.dll" />
+    <Content Include="packages\Microsoft.Data.SqlClient.SNI.7.1.2\build\net462\Microsoft.Data.SqlClient.SNI.x86.pdb" />
+    <Content Include="packages\Microsoft.Data.SqlClient.SNI.7.1.2\dotnet.png" />
+    <Content Include="packages\Microsoft.Data.SqlClient.SNI.7.1.2\LICENSE.txt" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Abstractions.8.0.0\Icon.png" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Abstractions.8.0.0\lib\net462\Microsoft.Extensions.Caching.Abstractions.dll" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Abstractions.8.0.0\lib\net462\Microsoft.Extensions.Caching.Abstractions.xml" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Abstractions.8.0.0\lib\net6.0\Microsoft.Extensions.Caching.Abstractions.dll" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Abstractions.8.0.0\lib\net6.0\Microsoft.Extensions.Caching.Abstractions.xml" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Abstractions.8.0.0\lib\net7.0\Microsoft.Extensions.Caching.Abstractions.dll" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Abstractions.8.0.0\lib\net7.0\Microsoft.Extensions.Caching.Abstractions.xml" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Abstractions.8.0.0\lib\net8.0\Microsoft.Extensions.Caching.Abstractions.dll" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Abstractions.8.0.0\lib\net8.0\Microsoft.Extensions.Caching.Abstractions.xml" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Abstractions.8.0.0\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Abstractions.8.0.0\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.xml" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Abstractions.8.0.0\LICENSE.TXT" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Abstractions.8.0.0\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Abstractions.8.0.0\useSharedDesignerContext.txt" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Memory.8.0.1\Icon.png" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Memory.8.0.1\lib\net462\Microsoft.Extensions.Caching.Memory.dll" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Memory.8.0.1\lib\net462\Microsoft.Extensions.Caching.Memory.xml" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Memory.8.0.1\lib\net6.0\Microsoft.Extensions.Caching.Memory.dll" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Memory.8.0.1\lib\net6.0\Microsoft.Extensions.Caching.Memory.xml" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Memory.8.0.1\lib\net7.0\Microsoft.Extensions.Caching.Memory.dll" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Memory.8.0.1\lib\net7.0\Microsoft.Extensions.Caching.Memory.xml" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Memory.8.0.1\lib\net8.0\Microsoft.Extensions.Caching.Memory.dll" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Memory.8.0.1\lib\net8.0\Microsoft.Extensions.Caching.Memory.xml" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Memory.8.0.1\lib\netstandard2.0\Microsoft.Extensions.Caching.Memory.dll" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Memory.8.0.1\lib\netstandard2.0\Microsoft.Extensions.Caching.Memory.xml" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Memory.8.0.1\LICENSE.TXT" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Memory.8.0.1\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Memory.8.0.1\useSharedDesignerContext.txt" />
+    <Content Include="packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2\Icon.png" />
+    <Content Include="packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2\lib\net462\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <Content Include="packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2\lib\net462\Microsoft.Extensions.DependencyInjection.Abstractions.xml" />
+    <Content Include="packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2\lib\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <Content Include="packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2\lib\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.xml" />
+    <Content Include="packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2\lib\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <Content Include="packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2\lib\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.xml" />
+    <Content Include="packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2\lib\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <Content Include="packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2\lib\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.xml" />
+    <Content Include="packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <Content Include="packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.xml" />
+    <Content Include="packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2\lib\netstandard2.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <Content Include="packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2\lib\netstandard2.1\Microsoft.Extensions.DependencyInjection.Abstractions.xml" />
+    <Content Include="packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2\LICENSE.TXT" />
+    <Content Include="packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2\useSharedDesignerContext.txt" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn3.11\cs\cs\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn3.11\cs\de\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn3.11\cs\es\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn3.11\cs\fr\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn3.11\cs\it\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn3.11\cs\ja\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn3.11\cs\ko\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn3.11\cs\Microsoft.Extensions.Logging.Generators.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn3.11\cs\pl\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn3.11\cs\pt-BR\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn3.11\cs\ru\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn3.11\cs\tr\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn3.11\cs\zh-Hans\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn3.11\cs\zh-Hant\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn4.0\cs\cs\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn4.0\cs\de\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn4.0\cs\es\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn4.0\cs\fr\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn4.0\cs\it\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn4.0\cs\ja\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn4.0\cs\ko\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn4.0\cs\Microsoft.Extensions.Logging.Generators.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn4.0\cs\pl\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn4.0\cs\pt-BR\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn4.0\cs\ru\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn4.0\cs\tr\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn4.0\cs\zh-Hans\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn4.0\cs\zh-Hant\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn4.4\cs\cs\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn4.4\cs\de\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn4.4\cs\es\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn4.4\cs\fr\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn4.4\cs\it\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn4.4\cs\ja\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn4.4\cs\ko\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn4.4\cs\Microsoft.Extensions.Logging.Generators.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn4.4\cs\pl\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn4.4\cs\pt-BR\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn4.4\cs\ru\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn4.4\cs\tr\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn4.4\cs\zh-Hans\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\analyzers\dotnet\roslyn4.4\cs\zh-Hant\Microsoft.Extensions.Logging.Generators.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\Icon.png" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\lib\net462\Microsoft.Extensions.Logging.Abstractions.xml" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\lib\net6.0\Microsoft.Extensions.Logging.Abstractions.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\lib\net6.0\Microsoft.Extensions.Logging.Abstractions.xml" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\lib\net7.0\Microsoft.Extensions.Logging.Abstractions.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\lib\net7.0\Microsoft.Extensions.Logging.Abstractions.xml" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\lib\net8.0\Microsoft.Extensions.Logging.Abstractions.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\lib\net8.0\Microsoft.Extensions.Logging.Abstractions.xml" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.xml" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\LICENSE.TXT" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\useSharedDesignerContext.txt" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\analyzers\dotnet\roslyn4.4\cs\cs\Microsoft.Extensions.Options.SourceGeneration.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\analyzers\dotnet\roslyn4.4\cs\de\Microsoft.Extensions.Options.SourceGeneration.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\analyzers\dotnet\roslyn4.4\cs\es\Microsoft.Extensions.Options.SourceGeneration.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\analyzers\dotnet\roslyn4.4\cs\fr\Microsoft.Extensions.Options.SourceGeneration.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\analyzers\dotnet\roslyn4.4\cs\it\Microsoft.Extensions.Options.SourceGeneration.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\analyzers\dotnet\roslyn4.4\cs\ja\Microsoft.Extensions.Options.SourceGeneration.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\analyzers\dotnet\roslyn4.4\cs\ko\Microsoft.Extensions.Options.SourceGeneration.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\analyzers\dotnet\roslyn4.4\cs\Microsoft.Extensions.Options.SourceGeneration.dll" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\analyzers\dotnet\roslyn4.4\cs\pl\Microsoft.Extensions.Options.SourceGeneration.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\analyzers\dotnet\roslyn4.4\cs\pt-BR\Microsoft.Extensions.Options.SourceGeneration.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\analyzers\dotnet\roslyn4.4\cs\ru\Microsoft.Extensions.Options.SourceGeneration.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\analyzers\dotnet\roslyn4.4\cs\tr\Microsoft.Extensions.Options.SourceGeneration.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\analyzers\dotnet\roslyn4.4\cs\zh-Hans\Microsoft.Extensions.Options.SourceGeneration.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\analyzers\dotnet\roslyn4.4\cs\zh-Hant\Microsoft.Extensions.Options.SourceGeneration.resources.dll" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\Icon.png" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\lib\net462\Microsoft.Extensions.Options.dll" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\lib\net462\Microsoft.Extensions.Options.xml" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\lib\net6.0\Microsoft.Extensions.Options.dll" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\lib\net6.0\Microsoft.Extensions.Options.xml" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\lib\net7.0\Microsoft.Extensions.Options.dll" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\lib\net7.0\Microsoft.Extensions.Options.xml" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\lib\net8.0\Microsoft.Extensions.Options.dll" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\lib\net8.0\Microsoft.Extensions.Options.xml" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\lib\netstandard2.0\Microsoft.Extensions.Options.dll" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\lib\netstandard2.0\Microsoft.Extensions.Options.xml" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\lib\netstandard2.1\Microsoft.Extensions.Options.dll" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\lib\netstandard2.1\Microsoft.Extensions.Options.xml" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\LICENSE.TXT" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\useSharedDesignerContext.txt" />
+    <Content Include="packages\Microsoft.Extensions.Primitives.8.0.0\Icon.png" />
+    <Content Include="packages\Microsoft.Extensions.Primitives.8.0.0\lib\net462\Microsoft.Extensions.Primitives.dll" />
+    <Content Include="packages\Microsoft.Extensions.Primitives.8.0.0\lib\net462\Microsoft.Extensions.Primitives.xml" />
+    <Content Include="packages\Microsoft.Extensions.Primitives.8.0.0\lib\net6.0\Microsoft.Extensions.Primitives.dll" />
+    <Content Include="packages\Microsoft.Extensions.Primitives.8.0.0\lib\net6.0\Microsoft.Extensions.Primitives.xml" />
+    <Content Include="packages\Microsoft.Extensions.Primitives.8.0.0\lib\net7.0\Microsoft.Extensions.Primitives.dll" />
+    <Content Include="packages\Microsoft.Extensions.Primitives.8.0.0\lib\net7.0\Microsoft.Extensions.Primitives.xml" />
+    <Content Include="packages\Microsoft.Extensions.Primitives.8.0.0\lib\net8.0\Microsoft.Extensions.Primitives.dll" />
+    <Content Include="packages\Microsoft.Extensions.Primitives.8.0.0\lib\net8.0\Microsoft.Extensions.Primitives.xml" />
+    <Content Include="packages\Microsoft.Extensions.Primitives.8.0.0\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll" />
+    <Content Include="packages\Microsoft.Extensions.Primitives.8.0.0\lib\netstandard2.0\Microsoft.Extensions.Primitives.xml" />
+    <Content Include="packages\Microsoft.Extensions.Primitives.8.0.0\LICENSE.TXT" />
+    <Content Include="packages\Microsoft.Extensions.Primitives.8.0.0\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\Microsoft.Extensions.Primitives.8.0.0\useSharedDesignerContext.txt" />
+    <Content Include="packages\Microsoft.IdentityModel.Abstractions.8.16.0\lib\net10.0\Microsoft.IdentityModel.Abstractions.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Abstractions.8.16.0\lib\net10.0\Microsoft.IdentityModel.Abstractions.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Abstractions.8.16.0\lib\net462\Microsoft.IdentityModel.Abstractions.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Abstractions.8.16.0\lib\net462\Microsoft.IdentityModel.Abstractions.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Abstractions.8.16.0\lib\net472\Microsoft.IdentityModel.Abstractions.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Abstractions.8.16.0\lib\net472\Microsoft.IdentityModel.Abstractions.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Abstractions.8.16.0\lib\net6.0\Microsoft.IdentityModel.Abstractions.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Abstractions.8.16.0\lib\net6.0\Microsoft.IdentityModel.Abstractions.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Abstractions.8.16.0\lib\net8.0\Microsoft.IdentityModel.Abstractions.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Abstractions.8.16.0\lib\net8.0\Microsoft.IdentityModel.Abstractions.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Abstractions.8.16.0\lib\net9.0\Microsoft.IdentityModel.Abstractions.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Abstractions.8.16.0\lib\net9.0\Microsoft.IdentityModel.Abstractions.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Abstractions.8.16.0\lib\netstandard2.0\Microsoft.IdentityModel.Abstractions.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Abstractions.8.16.0\lib\netstandard2.0\Microsoft.IdentityModel.Abstractions.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.JsonWebTokens.8.16.0\lib\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.JsonWebTokens.8.16.0\lib\net10.0\Microsoft.IdentityModel.JsonWebTokens.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.JsonWebTokens.8.16.0\lib\net462\Microsoft.IdentityModel.JsonWebTokens.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.JsonWebTokens.8.16.0\lib\net462\Microsoft.IdentityModel.JsonWebTokens.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.JsonWebTokens.8.16.0\lib\net472\Microsoft.IdentityModel.JsonWebTokens.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.JsonWebTokens.8.16.0\lib\net472\Microsoft.IdentityModel.JsonWebTokens.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.JsonWebTokens.8.16.0\lib\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.JsonWebTokens.8.16.0\lib\net6.0\Microsoft.IdentityModel.JsonWebTokens.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.JsonWebTokens.8.16.0\lib\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.JsonWebTokens.8.16.0\lib\net8.0\Microsoft.IdentityModel.JsonWebTokens.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.JsonWebTokens.8.16.0\lib\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.JsonWebTokens.8.16.0\lib\net9.0\Microsoft.IdentityModel.JsonWebTokens.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.JsonWebTokens.8.16.0\lib\netstandard2.0\Microsoft.IdentityModel.JsonWebTokens.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.JsonWebTokens.8.16.0\lib\netstandard2.0\Microsoft.IdentityModel.JsonWebTokens.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Logging.8.16.0\lib\net10.0\Microsoft.IdentityModel.Logging.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Logging.8.16.0\lib\net10.0\Microsoft.IdentityModel.Logging.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Logging.8.16.0\lib\net462\Microsoft.IdentityModel.Logging.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Logging.8.16.0\lib\net462\Microsoft.IdentityModel.Logging.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Logging.8.16.0\lib\net472\Microsoft.IdentityModel.Logging.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Logging.8.16.0\lib\net472\Microsoft.IdentityModel.Logging.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Logging.8.16.0\lib\net6.0\Microsoft.IdentityModel.Logging.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Logging.8.16.0\lib\net6.0\Microsoft.IdentityModel.Logging.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Logging.8.16.0\lib\net8.0\Microsoft.IdentityModel.Logging.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Logging.8.16.0\lib\net8.0\Microsoft.IdentityModel.Logging.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Logging.8.16.0\lib\net9.0\Microsoft.IdentityModel.Logging.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Logging.8.16.0\lib\net9.0\Microsoft.IdentityModel.Logging.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Logging.8.16.0\lib\netstandard2.0\Microsoft.IdentityModel.Logging.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Logging.8.16.0\lib\netstandard2.0\Microsoft.IdentityModel.Logging.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.8.16.0\lib\net10.0\Microsoft.IdentityModel.Protocols.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.8.16.0\lib\net10.0\Microsoft.IdentityModel.Protocols.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.8.16.0\lib\net462\Microsoft.IdentityModel.Protocols.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.8.16.0\lib\net462\Microsoft.IdentityModel.Protocols.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.8.16.0\lib\net472\Microsoft.IdentityModel.Protocols.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.8.16.0\lib\net472\Microsoft.IdentityModel.Protocols.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.8.16.0\lib\net6.0\Microsoft.IdentityModel.Protocols.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.8.16.0\lib\net6.0\Microsoft.IdentityModel.Protocols.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.8.16.0\lib\net8.0\Microsoft.IdentityModel.Protocols.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.8.16.0\lib\net8.0\Microsoft.IdentityModel.Protocols.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.8.16.0\lib\net9.0\Microsoft.IdentityModel.Protocols.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.8.16.0\lib\net9.0\Microsoft.IdentityModel.Protocols.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.8.16.0\lib\netstandard2.0\Microsoft.IdentityModel.Protocols.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.8.16.0\lib\netstandard2.0\Microsoft.IdentityModel.Protocols.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.OpenIdConnect.8.16.0\lib\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.OpenIdConnect.8.16.0\lib\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.OpenIdConnect.8.16.0\lib\net462\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.OpenIdConnect.8.16.0\lib\net462\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.OpenIdConnect.8.16.0\lib\net472\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.OpenIdConnect.8.16.0\lib\net472\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.OpenIdConnect.8.16.0\lib\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.OpenIdConnect.8.16.0\lib\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.OpenIdConnect.8.16.0\lib\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.OpenIdConnect.8.16.0\lib\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.OpenIdConnect.8.16.0\lib\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.OpenIdConnect.8.16.0\lib\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.OpenIdConnect.8.16.0\lib\netstandard2.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.OpenIdConnect.8.16.0\lib\netstandard2.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Tokens.8.16.0\lib\net10.0\Microsoft.IdentityModel.Tokens.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Tokens.8.16.0\lib\net10.0\Microsoft.IdentityModel.Tokens.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Tokens.8.16.0\lib\net462\Microsoft.IdentityModel.Tokens.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Tokens.8.16.0\lib\net462\Microsoft.IdentityModel.Tokens.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Tokens.8.16.0\lib\net472\Microsoft.IdentityModel.Tokens.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Tokens.8.16.0\lib\net472\Microsoft.IdentityModel.Tokens.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Tokens.8.16.0\lib\net6.0\Microsoft.IdentityModel.Tokens.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Tokens.8.16.0\lib\net6.0\Microsoft.IdentityModel.Tokens.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Tokens.8.16.0\lib\net8.0\Microsoft.IdentityModel.Tokens.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Tokens.8.16.0\lib\net8.0\Microsoft.IdentityModel.Tokens.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Tokens.8.16.0\lib\net9.0\Microsoft.IdentityModel.Tokens.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Tokens.8.16.0\lib\net9.0\Microsoft.IdentityModel.Tokens.xml" />
+    <Content Include="packages\Microsoft.IdentityModel.Tokens.8.16.0\lib\netstandard2.0\Microsoft.IdentityModel.Tokens.dll" />
+    <Content Include="packages\Microsoft.IdentityModel.Tokens.8.16.0\lib\netstandard2.0\Microsoft.IdentityModel.Tokens.xml" />
+    <Content Include="packages\System.Buffers.4.6.1\Icon.png" />
+    <Content Include="packages\System.Buffers.4.6.1\lib\net462\System.Buffers.dll" />
+    <Content Include="packages\System.Buffers.4.6.1\lib\net462\System.Buffers.xml" />
+    <Content Include="packages\System.Buffers.4.6.1\lib\netstandard2.0\System.Buffers.dll" />
+    <Content Include="packages\System.Buffers.4.6.1\lib\netstandard2.0\System.Buffers.xml" />
+    <Content Include="packages\System.Data.Common.4.3.0\dotnet_library_license.txt" />
+    <Content Include="packages\System.Data.Common.4.3.0\lib\net451\System.Data.Common.dll" />
+    <Content Include="packages\System.Data.Common.4.3.0\lib\netstandard1.2\System.Data.Common.dll" />
+    <Content Include="packages\System.Data.Common.4.3.0\lib\portable-net451+win8+wp8+wpa81\System.Data.Common.dll" />
+    <Content Include="packages\System.Data.Common.4.3.0\ref\net451\System.Data.Common.dll" />
+    <Content Include="packages\System.Data.Common.4.3.0\ref\netstandard1.2\de\System.Data.Common.xml" />
+    <Content Include="packages\System.Data.Common.4.3.0\ref\netstandard1.2\es\System.Data.Common.xml" />
+    <Content Include="packages\System.Data.Common.4.3.0\ref\netstandard1.2\fr\System.Data.Common.xml" />
+    <Content Include="packages\System.Data.Common.4.3.0\ref\netstandard1.2\it\System.Data.Common.xml" />
+    <Content Include="packages\System.Data.Common.4.3.0\ref\netstandard1.2\ja\System.Data.Common.xml" />
+    <Content Include="packages\System.Data.Common.4.3.0\ref\netstandard1.2\ko\System.Data.Common.xml" />
+    <Content Include="packages\System.Data.Common.4.3.0\ref\netstandard1.2\ru\System.Data.Common.xml" />
+    <Content Include="packages\System.Data.Common.4.3.0\ref\netstandard1.2\System.Data.Common.dll" />
+    <Content Include="packages\System.Data.Common.4.3.0\ref\netstandard1.2\System.Data.Common.xml" />
+    <Content Include="packages\System.Data.Common.4.3.0\ref\netstandard1.2\zh-hans\System.Data.Common.xml" />
+    <Content Include="packages\System.Data.Common.4.3.0\ref\netstandard1.2\zh-hant\System.Data.Common.xml" />
+    <Content Include="packages\System.Data.Common.4.3.0\ref\portable-net451+win8+wp8+wpa81\de\System.Data.Common.xml" />
+    <Content Include="packages\System.Data.Common.4.3.0\ref\portable-net451+win8+wp8+wpa81\es\System.Data.Common.xml" />
+    <Content Include="packages\System.Data.Common.4.3.0\ref\portable-net451+win8+wp8+wpa81\fr\System.Data.Common.xml" />
+    <Content Include="packages\System.Data.Common.4.3.0\ref\portable-net451+win8+wp8+wpa81\it\System.Data.Common.xml" />
+    <Content Include="packages\System.Data.Common.4.3.0\ref\portable-net451+win8+wp8+wpa81\ja\System.Data.Common.xml" />
+    <Content Include="packages\System.Data.Common.4.3.0\ref\portable-net451+win8+wp8+wpa81\ko\System.Data.Common.xml" />
+    <Content Include="packages\System.Data.Common.4.3.0\ref\portable-net451+win8+wp8+wpa81\ru\System.Data.Common.xml" />
+    <Content Include="packages\System.Data.Common.4.3.0\ref\portable-net451+win8+wp8+wpa81\System.Data.Common.dll" />
+    <Content Include="packages\System.Data.Common.4.3.0\ref\portable-net451+win8+wp8+wpa81\System.Data.Common.xml" />
+    <Content Include="packages\System.Data.Common.4.3.0\ref\portable-net451+win8+wp8+wpa81\zh-hans\System.Data.Common.xml" />
+    <Content Include="packages\System.Data.Common.4.3.0\ref\portable-net451+win8+wp8+wpa81\zh-hant\System.Data.Common.xml" />
+    <Content Include="packages\System.Data.Common.4.3.0\ThirdPartyNotices.txt" />
+    <Content Include="packages\System.Diagnostics.DiagnosticSource.10.0.3\Icon.png" />
+    <Content Include="packages\System.Diagnostics.DiagnosticSource.10.0.3\lib\net10.0\System.Diagnostics.DiagnosticSource.dll" />
+    <Content Include="packages\System.Diagnostics.DiagnosticSource.10.0.3\lib\net10.0\System.Diagnostics.DiagnosticSource.xml" />
+    <Content Include="packages\System.Diagnostics.DiagnosticSource.10.0.3\lib\net462\System.Diagnostics.DiagnosticSource.dll" />
+    <Content Include="packages\System.Diagnostics.DiagnosticSource.10.0.3\lib\net462\System.Diagnostics.DiagnosticSource.xml" />
+    <Content Include="packages\System.Diagnostics.DiagnosticSource.10.0.3\lib\net8.0\System.Diagnostics.DiagnosticSource.dll" />
+    <Content Include="packages\System.Diagnostics.DiagnosticSource.10.0.3\lib\net8.0\System.Diagnostics.DiagnosticSource.xml" />
+    <Content Include="packages\System.Diagnostics.DiagnosticSource.10.0.3\lib\net9.0\System.Diagnostics.DiagnosticSource.dll" />
+    <Content Include="packages\System.Diagnostics.DiagnosticSource.10.0.3\lib\net9.0\System.Diagnostics.DiagnosticSource.xml" />
+    <Content Include="packages\System.Diagnostics.DiagnosticSource.10.0.3\lib\netstandard2.0\System.Diagnostics.DiagnosticSource.dll" />
+    <Content Include="packages\System.Diagnostics.DiagnosticSource.10.0.3\lib\netstandard2.0\System.Diagnostics.DiagnosticSource.xml" />
+    <Content Include="packages\System.Diagnostics.DiagnosticSource.10.0.3\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\System.Diagnostics.DiagnosticSource.10.0.3\useSharedDesignerContext.txt" />
+    <Content Include="packages\System.IdentityModel.Tokens.Jwt.8.16.0\lib\net10.0\System.IdentityModel.Tokens.Jwt.dll" />
+    <Content Include="packages\System.IdentityModel.Tokens.Jwt.8.16.0\lib\net10.0\System.IdentityModel.Tokens.Jwt.xml" />
+    <Content Include="packages\System.IdentityModel.Tokens.Jwt.8.16.0\lib\net462\System.IdentityModel.Tokens.Jwt.dll" />
+    <Content Include="packages\System.IdentityModel.Tokens.Jwt.8.16.0\lib\net462\System.IdentityModel.Tokens.Jwt.xml" />
+    <Content Include="packages\System.IdentityModel.Tokens.Jwt.8.16.0\lib\net472\System.IdentityModel.Tokens.Jwt.dll" />
+    <Content Include="packages\System.IdentityModel.Tokens.Jwt.8.16.0\lib\net472\System.IdentityModel.Tokens.Jwt.xml" />
+    <Content Include="packages\System.IdentityModel.Tokens.Jwt.8.16.0\lib\net6.0\System.IdentityModel.Tokens.Jwt.dll" />
+    <Content Include="packages\System.IdentityModel.Tokens.Jwt.8.16.0\lib\net6.0\System.IdentityModel.Tokens.Jwt.xml" />
+    <Content Include="packages\System.IdentityModel.Tokens.Jwt.8.16.0\lib\net8.0\System.IdentityModel.Tokens.Jwt.dll" />
+    <Content Include="packages\System.IdentityModel.Tokens.Jwt.8.16.0\lib\net8.0\System.IdentityModel.Tokens.Jwt.xml" />
+    <Content Include="packages\System.IdentityModel.Tokens.Jwt.8.16.0\lib\net9.0\System.IdentityModel.Tokens.Jwt.dll" />
+    <Content Include="packages\System.IdentityModel.Tokens.Jwt.8.16.0\lib\net9.0\System.IdentityModel.Tokens.Jwt.xml" />
+    <Content Include="packages\System.IdentityModel.Tokens.Jwt.8.16.0\lib\netstandard2.0\System.IdentityModel.Tokens.Jwt.dll" />
+    <Content Include="packages\System.IdentityModel.Tokens.Jwt.8.16.0\lib\netstandard2.0\System.IdentityModel.Tokens.Jwt.xml" />
+    <Content Include="packages\System.IO.Pipelines.10.0.3\Icon.png" />
+    <Content Include="packages\System.IO.Pipelines.10.0.3\lib\net10.0\System.IO.Pipelines.dll" />
+    <Content Include="packages\System.IO.Pipelines.10.0.3\lib\net10.0\System.IO.Pipelines.xml" />
+    <Content Include="packages\System.IO.Pipelines.10.0.3\lib\net462\System.IO.Pipelines.dll" />
+    <Content Include="packages\System.IO.Pipelines.10.0.3\lib\net462\System.IO.Pipelines.xml" />
+    <Content Include="packages\System.IO.Pipelines.10.0.3\lib\net8.0\System.IO.Pipelines.dll" />
+    <Content Include="packages\System.IO.Pipelines.10.0.3\lib\net8.0\System.IO.Pipelines.xml" />
+    <Content Include="packages\System.IO.Pipelines.10.0.3\lib\net9.0\System.IO.Pipelines.dll" />
+    <Content Include="packages\System.IO.Pipelines.10.0.3\lib\net9.0\System.IO.Pipelines.xml" />
+    <Content Include="packages\System.IO.Pipelines.10.0.3\lib\netstandard2.0\System.IO.Pipelines.dll" />
+    <Content Include="packages\System.IO.Pipelines.10.0.3\lib\netstandard2.0\System.IO.Pipelines.xml" />
+    <Content Include="packages\System.IO.Pipelines.10.0.3\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\System.IO.Pipelines.10.0.3\useSharedDesignerContext.txt" />
+    <Content Include="packages\System.Memory.4.6.3\Icon.png" />
+    <Content Include="packages\System.Memory.4.6.3\lib\net462\System.Memory.dll" />
+    <Content Include="packages\System.Memory.4.6.3\lib\net462\System.Memory.xml" />
+    <Content Include="packages\System.Memory.4.6.3\lib\netstandard2.0\System.Memory.dll" />
+    <Content Include="packages\System.Memory.4.6.3\lib\netstandard2.0\System.Memory.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.6.1\Icon.png" />
+    <Content Include="packages\System.Numerics.Vectors.4.6.1\lib\net462\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.6.1\lib\net462\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.6.1\lib\netstandard2.0\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.6.1\lib\netstandard2.0\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.6.1.2\Icon.png" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.6.1.2\lib\net462\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.6.1.2\lib\net462\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.6.1.2\lib\net6.0\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.6.1.2\lib\net6.0\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.6.1.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.6.1.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\dotnet_library_license.txt" />
+    <Content Include="packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\netstandard1.1\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\win8\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\wpa81\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\ref\netstandard1.1\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\runtimes\aot\lib\netcore50\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\runtimes\unix\lib\netstandard1.1\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\runtimes\win\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\runtimes\win\lib\netcore50\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\runtimes\win\lib\netstandard1.1\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\ThirdPartyNotices.txt" />
+    <Content Include="packages\System.Security.Cryptography.Pkcs.8.0.2\Icon.png" />
+    <Content Include="packages\System.Security.Cryptography.Pkcs.8.0.2\lib\net462\System.Security.Cryptography.Pkcs.dll" />
+    <Content Include="packages\System.Security.Cryptography.Pkcs.8.0.2\lib\net462\System.Security.Cryptography.Pkcs.xml" />
+    <Content Include="packages\System.Security.Cryptography.Pkcs.8.0.2\lib\net6.0\System.Security.Cryptography.Pkcs.dll" />
+    <Content Include="packages\System.Security.Cryptography.Pkcs.8.0.2\lib\net6.0\System.Security.Cryptography.Pkcs.xml" />
+    <Content Include="packages\System.Security.Cryptography.Pkcs.8.0.2\lib\net7.0\System.Security.Cryptography.Pkcs.dll" />
+    <Content Include="packages\System.Security.Cryptography.Pkcs.8.0.2\lib\net7.0\System.Security.Cryptography.Pkcs.xml" />
+    <Content Include="packages\System.Security.Cryptography.Pkcs.8.0.2\lib\net8.0\System.Security.Cryptography.Pkcs.dll" />
+    <Content Include="packages\System.Security.Cryptography.Pkcs.8.0.2\lib\net8.0\System.Security.Cryptography.Pkcs.xml" />
+    <Content Include="packages\System.Security.Cryptography.Pkcs.8.0.2\lib\netstandard2.0\System.Security.Cryptography.Pkcs.dll" />
+    <Content Include="packages\System.Security.Cryptography.Pkcs.8.0.2\lib\netstandard2.0\System.Security.Cryptography.Pkcs.xml" />
+    <Content Include="packages\System.Security.Cryptography.Pkcs.8.0.2\lib\netstandard2.1\System.Security.Cryptography.Pkcs.dll" />
+    <Content Include="packages\System.Security.Cryptography.Pkcs.8.0.2\lib\netstandard2.1\System.Security.Cryptography.Pkcs.xml" />
+    <Content Include="packages\System.Security.Cryptography.Pkcs.8.0.2\LICENSE.TXT" />
+    <Content Include="packages\System.Security.Cryptography.Pkcs.8.0.2\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll" />
+    <Content Include="packages\System.Security.Cryptography.Pkcs.8.0.2\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.xml" />
+    <Content Include="packages\System.Security.Cryptography.Pkcs.8.0.2\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll" />
+    <Content Include="packages\System.Security.Cryptography.Pkcs.8.0.2\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.xml" />
+    <Content Include="packages\System.Security.Cryptography.Pkcs.8.0.2\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll" />
+    <Content Include="packages\System.Security.Cryptography.Pkcs.8.0.2\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.xml" />
+    <Content Include="packages\System.Security.Cryptography.Pkcs.8.0.2\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\System.Security.Cryptography.Pkcs.8.0.2\useSharedDesignerContext.txt" />
+    <Content Include="packages\System.Text.Encodings.Web.10.0.3\Icon.png" />
+    <Content Include="packages\System.Text.Encodings.Web.10.0.3\lib\net10.0\System.Text.Encodings.Web.dll" />
+    <Content Include="packages\System.Text.Encodings.Web.10.0.3\lib\net10.0\System.Text.Encodings.Web.xml" />
+    <Content Include="packages\System.Text.Encodings.Web.10.0.3\lib\net462\System.Text.Encodings.Web.dll" />
+    <Content Include="packages\System.Text.Encodings.Web.10.0.3\lib\net462\System.Text.Encodings.Web.xml" />
+    <Content Include="packages\System.Text.Encodings.Web.10.0.3\lib\net8.0\System.Text.Encodings.Web.dll" />
+    <Content Include="packages\System.Text.Encodings.Web.10.0.3\lib\net8.0\System.Text.Encodings.Web.xml" />
+    <Content Include="packages\System.Text.Encodings.Web.10.0.3\lib\net9.0\System.Text.Encodings.Web.dll" />
+    <Content Include="packages\System.Text.Encodings.Web.10.0.3\lib\net9.0\System.Text.Encodings.Web.xml" />
+    <Content Include="packages\System.Text.Encodings.Web.10.0.3\lib\netstandard2.0\System.Text.Encodings.Web.dll" />
+    <Content Include="packages\System.Text.Encodings.Web.10.0.3\lib\netstandard2.0\System.Text.Encodings.Web.xml" />
+    <Content Include="packages\System.Text.Encodings.Web.10.0.3\runtimes\browser\lib\net10.0\System.Text.Encodings.Web.dll" />
+    <Content Include="packages\System.Text.Encodings.Web.10.0.3\runtimes\browser\lib\net10.0\System.Text.Encodings.Web.xml" />
+    <Content Include="packages\System.Text.Encodings.Web.10.0.3\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll" />
+    <Content Include="packages\System.Text.Encodings.Web.10.0.3\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.xml" />
+    <Content Include="packages\System.Text.Encodings.Web.10.0.3\runtimes\wasi\lib\net10.0\System.Text.Encodings.Web.dll" />
+    <Content Include="packages\System.Text.Encodings.Web.10.0.3\runtimes\wasi\lib\net10.0\System.Text.Encodings.Web.xml" />
+    <Content Include="packages\System.Text.Encodings.Web.10.0.3\runtimes\win\lib\net9.0\System.Text.Encodings.Web.dll" />
+    <Content Include="packages\System.Text.Encodings.Web.10.0.3\runtimes\win\lib\net9.0\System.Text.Encodings.Web.xml" />
+    <Content Include="packages\System.Text.Encodings.Web.10.0.3\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\System.Text.Encodings.Web.10.0.3\useSharedDesignerContext.txt" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn3.11\cs\cs\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn3.11\cs\de\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn3.11\cs\es\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn3.11\cs\fr\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn3.11\cs\it\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn3.11\cs\ja\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn3.11\cs\ko\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn3.11\cs\pl\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn3.11\cs\pt-BR\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn3.11\cs\ru\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn3.11\cs\System.Text.Json.SourceGeneration.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn3.11\cs\tr\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn3.11\cs\zh-Hans\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn3.11\cs\zh-Hant\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn4.0\cs\cs\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn4.0\cs\de\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn4.0\cs\es\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn4.0\cs\fr\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn4.0\cs\it\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn4.0\cs\ja\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn4.0\cs\ko\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn4.0\cs\pl\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn4.0\cs\pt-BR\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn4.0\cs\ru\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn4.0\cs\System.Text.Json.SourceGeneration.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn4.0\cs\tr\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn4.0\cs\zh-Hans\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn4.0\cs\zh-Hant\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn4.4\cs\cs\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn4.4\cs\de\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn4.4\cs\es\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn4.4\cs\fr\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn4.4\cs\it\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn4.4\cs\ja\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn4.4\cs\ko\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn4.4\cs\pl\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn4.4\cs\pt-BR\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn4.4\cs\ru\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn4.4\cs\System.Text.Json.SourceGeneration.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn4.4\cs\tr\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn4.4\cs\zh-Hans\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\analyzers\dotnet\roslyn4.4\cs\zh-Hant\System.Text.Json.SourceGeneration.resources.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\Icon.png" />
+    <Content Include="packages\System.Text.Json.10.0.3\lib\net10.0\System.Text.Json.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\lib\net10.0\System.Text.Json.xml" />
+    <Content Include="packages\System.Text.Json.10.0.3\lib\net462\System.Text.Json.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\lib\net462\System.Text.Json.xml" />
+    <Content Include="packages\System.Text.Json.10.0.3\lib\net8.0\System.Text.Json.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\lib\net8.0\System.Text.Json.xml" />
+    <Content Include="packages\System.Text.Json.10.0.3\lib\net9.0\System.Text.Json.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\lib\net9.0\System.Text.Json.xml" />
+    <Content Include="packages\System.Text.Json.10.0.3\lib\netstandard2.0\System.Text.Json.dll" />
+    <Content Include="packages\System.Text.Json.10.0.3\lib\netstandard2.0\System.Text.Json.xml" />
+    <Content Include="packages\System.Text.Json.10.0.3\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\System.Text.Json.10.0.3\useSharedDesignerContext.txt" />
+    <Content Include="packages\System.Threading.Channels.10.0.3\Icon.png" />
+    <Content Include="packages\System.Threading.Channels.10.0.3\lib\net10.0\System.Threading.Channels.dll" />
+    <Content Include="packages\System.Threading.Channels.10.0.3\lib\net10.0\System.Threading.Channels.xml" />
+    <Content Include="packages\System.Threading.Channels.10.0.3\lib\net462\System.Threading.Channels.dll" />
+    <Content Include="packages\System.Threading.Channels.10.0.3\lib\net462\System.Threading.Channels.xml" />
+    <Content Include="packages\System.Threading.Channels.10.0.3\lib\net8.0\System.Threading.Channels.dll" />
+    <Content Include="packages\System.Threading.Channels.10.0.3\lib\net8.0\System.Threading.Channels.xml" />
+    <Content Include="packages\System.Threading.Channels.10.0.3\lib\net9.0\System.Threading.Channels.dll" />
+    <Content Include="packages\System.Threading.Channels.10.0.3\lib\net9.0\System.Threading.Channels.xml" />
+    <Content Include="packages\System.Threading.Channels.10.0.3\lib\netstandard2.0\System.Threading.Channels.dll" />
+    <Content Include="packages\System.Threading.Channels.10.0.3\lib\netstandard2.0\System.Threading.Channels.xml" />
+    <Content Include="packages\System.Threading.Channels.10.0.3\lib\netstandard2.1\System.Threading.Channels.dll" />
+    <Content Include="packages\System.Threading.Channels.10.0.3\lib\netstandard2.1\System.Threading.Channels.xml" />
+    <Content Include="packages\System.Threading.Channels.10.0.3\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\System.Threading.Channels.10.0.3\useSharedDesignerContext.txt" />
+    <Content Include="packages\System.Threading.RateLimiting.8.0.0\Icon.png" />
+    <Content Include="packages\System.Threading.RateLimiting.8.0.0\lib\net462\System.Threading.RateLimiting.dll" />
+    <Content Include="packages\System.Threading.RateLimiting.8.0.0\lib\net462\System.Threading.RateLimiting.xml" />
+    <Content Include="packages\System.Threading.RateLimiting.8.0.0\lib\net6.0\System.Threading.RateLimiting.dll" />
+    <Content Include="packages\System.Threading.RateLimiting.8.0.0\lib\net6.0\System.Threading.RateLimiting.xml" />
+    <Content Include="packages\System.Threading.RateLimiting.8.0.0\lib\net7.0\System.Threading.RateLimiting.dll" />
+    <Content Include="packages\System.Threading.RateLimiting.8.0.0\lib\net7.0\System.Threading.RateLimiting.xml" />
+    <Content Include="packages\System.Threading.RateLimiting.8.0.0\lib\net8.0\System.Threading.RateLimiting.dll" />
+    <Content Include="packages\System.Threading.RateLimiting.8.0.0\lib\net8.0\System.Threading.RateLimiting.xml" />
+    <Content Include="packages\System.Threading.RateLimiting.8.0.0\lib\netstandard2.0\System.Threading.RateLimiting.dll" />
+    <Content Include="packages\System.Threading.RateLimiting.8.0.0\lib\netstandard2.0\System.Threading.RateLimiting.xml" />
+    <Content Include="packages\System.Threading.RateLimiting.8.0.0\LICENSE.TXT" />
+    <Content Include="packages\System.Threading.RateLimiting.8.0.0\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\System.Threading.RateLimiting.8.0.0\useSharedDesignerContext.txt" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.6.3\Icon.png" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.6.3\lib\net462\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.6.3\lib\net462\System.Threading.Tasks.Extensions.xml" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.6.3\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.6.3\lib\netstandard2.0\System.Threading.Tasks.Extensions.xml" />
+    <Content Include="packages\System.ValueTuple.4.6.2\buildTransitive\net471\ValueTupleFrameworkList.xml" />
+    <Content Include="packages\System.ValueTuple.4.6.2\build\net471\ValueTupleFrameworkList.xml" />
+    <Content Include="packages\System.ValueTuple.4.6.2\Icon.png" />
+    <Content Include="packages\System.ValueTuple.4.6.2\lib\net462\System.ValueTuple.dll" />
+    <Content Include="packages\System.ValueTuple.4.6.2\lib\net462\System.ValueTuple.xml" />
+    <Content Include="packages\System.ValueTuple.4.6.2\lib\net47\System.ValueTuple.dll" />
+    <Content Include="packages\System.ValueTuple.4.6.2\lib\net47\System.ValueTuple.xml" />
     <Content Include="pANEL.aspx" />
     <Content Include="radiobutton.aspx" />
     <Content Include="Registration.aspx" />
     <Content Include="Second.aspx" />
+    <Content Include="students.aspx" />
     <Content Include="Style.css" />
+    <Content Include="userAuthentication.aspx" />
+    <Content Include="viewStudents.aspx" />
     <Content Include="Web.config" />
+    <Content Include="Web.config.connectionStrings.snippet.xml" />
     <Content Include="WebForm1.aspx" />
     <Content Include="WebForm2.aspx" />
     <Content Include="Register.aspx" />
@@ -95,12 +852,31 @@
     <Compile Include="Checkbox.aspx.designer.cs">
       <DependentUpon>Checkbox.aspx</DependentUpon>
     </Compile>
+    <Compile Include="dashbar.aspx.cs">
+      <DependentUpon>dashbar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dashbar.aspx.designer.cs">
+      <DependentUpon>dashbar.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.aspx.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Dashboard.aspx.designer.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseDemo.aspx.cs">
+      <DependentUpon>DatabaseDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DatabaseDemo.aspx.designer.cs">
+      <DependentUpon>DatabaseDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="dropdownlist.aspx.cs">
       <DependentUpon>dropdownlist.aspx</DependentUpon>
@@ -151,6 +927,13 @@
     <Compile Include="logiinform.aspx.designer.cs">
       <DependentUpon>logiinform.aspx</DependentUpon>
     </Compile>
+    <Compile Include="loops.aspx.cs">
+      <DependentUpon>loops.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loops.aspx.designer.cs">
+      <DependentUpon>loops.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Master.Master.cs">
       <DependentUpon>Master.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -187,6 +970,27 @@
     <Compile Include="Second.aspx.designer.cs">
       <DependentUpon>Second.aspx</DependentUpon>
     </Compile>
+    <Compile Include="students.aspx.cs">
+      <DependentUpon>students.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="students.aspx.designer.cs">
+      <DependentUpon>students.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userAuthentication.aspx.cs">
+      <DependentUpon>userAuthentication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userAuthentication.aspx.designer.cs">
+      <DependentUpon>userAuthentication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewStudents.aspx.cs">
+      <DependentUpon>viewStudents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewStudents.aspx.designer.cs">
+      <DependentUpon>viewStudents.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -211,7 +1015,256 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Master.Master" />
+    <Content Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Content>
+    <Content Include="obj\Debug\Class Po.0315D749.Up2Date" />
+    <Content Include="obj\Debug\Class Portfolio.csproj.AssemblyReference.cache" />
+    <Content Include="obj\Debug\Class Portfolio.csproj.CoreCompileInputs.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Release\Class Portfolio.csproj.AssemblyReference.cache" />
     <None Include="packages.config" />
+    <Content Include="packages\Microsoft.Bcl.AsyncInterfaces.10.0.3\.signature.p7s" />
+    <Content Include="packages\Microsoft.Bcl.AsyncInterfaces.10.0.3\buildTransitive\net461\Microsoft.Bcl.AsyncInterfaces.targets" />
+    <Content Include="packages\Microsoft.Bcl.AsyncInterfaces.10.0.3\buildTransitive\net462\_._" />
+    <Content Include="packages\Microsoft.Bcl.AsyncInterfaces.10.0.3\Microsoft.Bcl.AsyncInterfaces.10.0.3.nupkg" />
+    <Content Include="packages\Microsoft.Bcl.AsyncInterfaces.10.0.3\PACKAGE.md" />
+    <Content Include="packages\Microsoft.Bcl.Cryptography.8.0.0\.signature.p7s" />
+    <Content Include="packages\Microsoft.Bcl.Cryptography.8.0.0\buildTransitive\net461\Microsoft.Bcl.Cryptography.targets" />
+    <Content Include="packages\Microsoft.Bcl.Cryptography.8.0.0\buildTransitive\net462\_._" />
+    <Content Include="packages\Microsoft.Bcl.Cryptography.8.0.0\buildTransitive\net6.0\_._" />
+    <Content Include="packages\Microsoft.Bcl.Cryptography.8.0.0\buildTransitive\netcoreapp2.0\Microsoft.Bcl.Cryptography.targets" />
+    <Content Include="packages\Microsoft.Bcl.Cryptography.8.0.0\Microsoft.Bcl.Cryptography.8.0.0.nupkg" />
+    <Content Include="packages\Microsoft.Bcl.Cryptography.8.0.0\PACKAGE.md" />
+    <Content Include="packages\Microsoft.Bcl.TimeProvider.8.0.1\.signature.p7s" />
+    <Content Include="packages\Microsoft.Bcl.TimeProvider.8.0.1\buildTransitive\net461\Microsoft.Bcl.TimeProvider.targets" />
+    <Content Include="packages\Microsoft.Bcl.TimeProvider.8.0.1\buildTransitive\net462\_._" />
+    <Content Include="packages\Microsoft.Bcl.TimeProvider.8.0.1\buildTransitive\net6.0\_._" />
+    <Content Include="packages\Microsoft.Bcl.TimeProvider.8.0.1\buildTransitive\netcoreapp2.0\Microsoft.Bcl.TimeProvider.targets" />
+    <Content Include="packages\Microsoft.Bcl.TimeProvider.8.0.1\Microsoft.Bcl.TimeProvider.8.0.1.nupkg" />
+    <Content Include="packages\Microsoft.Bcl.TimeProvider.8.0.1\PACKAGE.md" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\.signature.p7s" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0.nupkg" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tools\Roslyn-4.1.0\csc.exe.config" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tools\Roslyn-4.1.0\csc.rsp" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tools\Roslyn-4.1.0\csi.exe.config" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tools\Roslyn-4.1.0\csi.rsp" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tools\Roslyn-4.1.0\Microsoft.CSharp.Core.targets" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tools\Roslyn-4.1.0\Microsoft.Managed.Core.CurrentVersions.targets" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tools\Roslyn-4.1.0\Microsoft.Managed.Core.targets" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tools\Roslyn-4.1.0\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tools\Roslyn-4.1.0\vbc.exe.config" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tools\Roslyn-4.1.0\vbc.rsp" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\tools\Roslyn-4.1.0\VBCSCompiler.exe.config" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\.signature.p7s" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\Microsoft.Data.SqlClient.7.1.2.nupkg" />
+    <Content Include="packages\Microsoft.Data.SqlClient.7.1.2\README.md" />
+    <Content Include="packages\Microsoft.Data.SqlClient.Extensions.Abstractions.7.1.2\.signature.p7s" />
+    <Content Include="packages\Microsoft.Data.SqlClient.Extensions.Abstractions.7.1.2\Microsoft.Data.SqlClient.Extensions.Abstractions.7.1.2.nupkg" />
+    <Content Include="packages\Microsoft.Data.SqlClient.Extensions.Abstractions.7.1.2\README.md" />
+    <Content Include="packages\Microsoft.Data.SqlClient.Internal.Logging.7.1.2\.signature.p7s" />
+    <Content Include="packages\Microsoft.Data.SqlClient.Internal.Logging.7.1.2\Microsoft.Data.SqlClient.Internal.Logging.7.1.2.nupkg" />
+    <Content Include="packages\Microsoft.Data.SqlClient.Internal.Logging.7.1.2\README.md" />
+    <Content Include="packages\Microsoft.Data.SqlClient.SNI.7.1.2\.signature.p7s" />
+    <Content Include="packages\Microsoft.Data.SqlClient.SNI.7.1.2\buildTransitive\net462\Microsoft.Data.SqlClient.SNI.targets" />
+    <Content Include="packages\Microsoft.Data.SqlClient.SNI.7.1.2\build\net462\Microsoft.Data.SqlClient.SNI.targets" />
+    <Content Include="packages\Microsoft.Data.SqlClient.SNI.7.1.2\Microsoft.Data.SqlClient.SNI.7.1.2.nupkg" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Abstractions.8.0.0\.signature.p7s" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Abstractions.8.0.0\buildTransitive\net461\Microsoft.Extensions.Caching.Abstractions.targets" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Abstractions.8.0.0\buildTransitive\net462\_._" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Abstractions.8.0.0\buildTransitive\net6.0\_._" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Abstractions.8.0.0\buildTransitive\netcoreapp2.0\Microsoft.Extensions.Caching.Abstractions.targets" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Abstractions.8.0.0\Microsoft.Extensions.Caching.Abstractions.8.0.0.nupkg" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Abstractions.8.0.0\PACKAGE.md" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Memory.8.0.1\.signature.p7s" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Memory.8.0.1\buildTransitive\net461\Microsoft.Extensions.Caching.Memory.targets" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Memory.8.0.1\buildTransitive\net462\_._" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Memory.8.0.1\buildTransitive\net6.0\_._" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Memory.8.0.1\buildTransitive\netcoreapp2.0\Microsoft.Extensions.Caching.Memory.targets" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Memory.8.0.1\Microsoft.Extensions.Caching.Memory.8.0.1.nupkg" />
+    <Content Include="packages\Microsoft.Extensions.Caching.Memory.8.0.1\PACKAGE.md" />
+    <Content Include="packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2\.signature.p7s" />
+    <Content Include="packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2\buildTransitive\net461\Microsoft.Extensions.DependencyInjection.Abstractions.targets" />
+    <Content Include="packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2\buildTransitive\net462\_._" />
+    <Content Include="packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2\buildTransitive\net6.0\_._" />
+    <Content Include="packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2\buildTransitive\netcoreapp2.0\Microsoft.Extensions.DependencyInjection.Abstractions.targets" />
+    <Content Include="packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2.nupkg" />
+    <Content Include="packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2\PACKAGE.md" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\.signature.p7s" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\buildTransitive\net461\Microsoft.Extensions.Logging.Abstractions.targets" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\buildTransitive\net462\Microsoft.Extensions.Logging.Abstractions.targets" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\buildTransitive\net6.0\Microsoft.Extensions.Logging.Abstractions.targets" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\buildTransitive\netcoreapp2.0\Microsoft.Extensions.Logging.Abstractions.targets" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\buildTransitive\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.targets" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\Microsoft.Extensions.Logging.Abstractions.8.0.2.nupkg" />
+    <Content Include="packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\PACKAGE.md" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\.signature.p7s" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\buildTransitive\net461\Microsoft.Extensions.Options.targets" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\buildTransitive\net462\Microsoft.Extensions.Options.targets" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\buildTransitive\net6.0\Microsoft.Extensions.Options.targets" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\buildTransitive\netcoreapp2.0\Microsoft.Extensions.Options.targets" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\buildTransitive\netstandard2.0\Microsoft.Extensions.Options.targets" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\Microsoft.Extensions.Options.8.0.2.nupkg" />
+    <Content Include="packages\Microsoft.Extensions.Options.8.0.2\PACKAGE.md" />
+    <Content Include="packages\Microsoft.Extensions.Primitives.8.0.0\.signature.p7s" />
+    <Content Include="packages\Microsoft.Extensions.Primitives.8.0.0\buildTransitive\net461\Microsoft.Extensions.Primitives.targets" />
+    <Content Include="packages\Microsoft.Extensions.Primitives.8.0.0\buildTransitive\net462\_._" />
+    <Content Include="packages\Microsoft.Extensions.Primitives.8.0.0\buildTransitive\net6.0\_._" />
+    <Content Include="packages\Microsoft.Extensions.Primitives.8.0.0\buildTransitive\netcoreapp2.0\Microsoft.Extensions.Primitives.targets" />
+    <Content Include="packages\Microsoft.Extensions.Primitives.8.0.0\Microsoft.Extensions.Primitives.8.0.0.nupkg" />
+    <Content Include="packages\Microsoft.Extensions.Primitives.8.0.0\PACKAGE.md" />
+    <Content Include="packages\Microsoft.IdentityModel.Abstractions.8.16.0\.signature.p7s" />
+    <Content Include="packages\Microsoft.IdentityModel.Abstractions.8.16.0\Microsoft.IdentityModel.Abstractions.8.16.0.nupkg" />
+    <Content Include="packages\Microsoft.IdentityModel.Abstractions.8.16.0\README.md" />
+    <Content Include="packages\Microsoft.IdentityModel.JsonWebTokens.8.16.0\.signature.p7s" />
+    <Content Include="packages\Microsoft.IdentityModel.JsonWebTokens.8.16.0\Microsoft.IdentityModel.JsonWebTokens.8.16.0.nupkg" />
+    <Content Include="packages\Microsoft.IdentityModel.JsonWebTokens.8.16.0\README.md" />
+    <Content Include="packages\Microsoft.IdentityModel.Logging.8.16.0\.signature.p7s" />
+    <Content Include="packages\Microsoft.IdentityModel.Logging.8.16.0\Microsoft.IdentityModel.Logging.8.16.0.nupkg" />
+    <Content Include="packages\Microsoft.IdentityModel.Logging.8.16.0\README.md" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.8.16.0\.signature.p7s" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.8.16.0\Microsoft.IdentityModel.Protocols.8.16.0.nupkg" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.8.16.0\README.md" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.OpenIdConnect.8.16.0\.signature.p7s" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.OpenIdConnect.8.16.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.8.16.0.nupkg" />
+    <Content Include="packages\Microsoft.IdentityModel.Protocols.OpenIdConnect.8.16.0\README.md" />
+    <Content Include="packages\Microsoft.IdentityModel.Tokens.8.16.0\.signature.p7s" />
+    <Content Include="packages\Microsoft.IdentityModel.Tokens.8.16.0\Microsoft.IdentityModel.Tokens.8.16.0.nupkg" />
+    <Content Include="packages\Microsoft.IdentityModel.Tokens.8.16.0\README.md" />
+    <Content Include="packages\System.Buffers.4.6.1\.signature.p7s" />
+    <Content Include="packages\System.Buffers.4.6.1\buildTransitive\net461\System.Buffers.targets" />
+    <Content Include="packages\System.Buffers.4.6.1\buildTransitive\net462\_._" />
+    <Content Include="packages\System.Buffers.4.6.1\lib\netcoreapp2.0\_._" />
+    <Content Include="packages\System.Buffers.4.6.1\lib\netstandard2.1\_._" />
+    <Content Include="packages\System.Buffers.4.6.1\PACKAGE.md" />
+    <Content Include="packages\System.Buffers.4.6.1\System.Buffers.4.6.1.nupkg" />
+    <Content Include="packages\System.Data.Common.4.3.0\.signature.p7s" />
+    <Content Include="packages\System.Data.Common.4.3.0\lib\MonoAndroid10\_._" />
+    <Content Include="packages\System.Data.Common.4.3.0\lib\MonoTouch10\_._" />
+    <Content Include="packages\System.Data.Common.4.3.0\lib\xamarinios10\_._" />
+    <Content Include="packages\System.Data.Common.4.3.0\lib\xamarinmac20\_._" />
+    <Content Include="packages\System.Data.Common.4.3.0\lib\xamarintvos10\_._" />
+    <Content Include="packages\System.Data.Common.4.3.0\lib\xamarinwatchos10\_._" />
+    <Content Include="packages\System.Data.Common.4.3.0\ref\MonoAndroid10\_._" />
+    <Content Include="packages\System.Data.Common.4.3.0\ref\MonoTouch10\_._" />
+    <Content Include="packages\System.Data.Common.4.3.0\ref\xamarinios10\_._" />
+    <Content Include="packages\System.Data.Common.4.3.0\ref\xamarinmac20\_._" />
+    <Content Include="packages\System.Data.Common.4.3.0\ref\xamarintvos10\_._" />
+    <Content Include="packages\System.Data.Common.4.3.0\ref\xamarinwatchos10\_._" />
+    <Content Include="packages\System.Data.Common.4.3.0\System.Data.Common.4.3.0.nupkg" />
+    <Content Include="packages\System.Diagnostics.DiagnosticSource.10.0.3\.signature.p7s" />
+    <Content Include="packages\System.Diagnostics.DiagnosticSource.10.0.3\buildTransitive\net461\System.Diagnostics.DiagnosticSource.targets" />
+    <Content Include="packages\System.Diagnostics.DiagnosticSource.10.0.3\buildTransitive\net462\_._" />
+    <Content Include="packages\System.Diagnostics.DiagnosticSource.10.0.3\buildTransitive\net8.0\_._" />
+    <Content Include="packages\System.Diagnostics.DiagnosticSource.10.0.3\buildTransitive\netcoreapp2.0\System.Diagnostics.DiagnosticSource.targets" />
+    <Content Include="packages\System.Diagnostics.DiagnosticSource.10.0.3\System.Diagnostics.DiagnosticSource.10.0.3.nupkg" />
+    <Content Include="packages\System.IdentityModel.Tokens.Jwt.8.16.0\.signature.p7s" />
+    <Content Include="packages\System.IdentityModel.Tokens.Jwt.8.16.0\README.md" />
+    <Content Include="packages\System.IdentityModel.Tokens.Jwt.8.16.0\System.IdentityModel.Tokens.Jwt.8.16.0.nupkg" />
+    <Content Include="packages\System.IO.Pipelines.10.0.3\.signature.p7s" />
+    <Content Include="packages\System.IO.Pipelines.10.0.3\buildTransitive\net461\System.IO.Pipelines.targets" />
+    <Content Include="packages\System.IO.Pipelines.10.0.3\buildTransitive\net462\_._" />
+    <Content Include="packages\System.IO.Pipelines.10.0.3\buildTransitive\net8.0\_._" />
+    <Content Include="packages\System.IO.Pipelines.10.0.3\buildTransitive\netcoreapp2.0\System.IO.Pipelines.targets" />
+    <Content Include="packages\System.IO.Pipelines.10.0.3\PACKAGE.md" />
+    <Content Include="packages\System.IO.Pipelines.10.0.3\System.IO.Pipelines.10.0.3.nupkg" />
+    <Content Include="packages\System.Memory.4.6.3\.signature.p7s" />
+    <Content Include="packages\System.Memory.4.6.3\buildTransitive\net461\System.Memory.targets" />
+    <Content Include="packages\System.Memory.4.6.3\buildTransitive\net462\_._" />
+    <Content Include="packages\System.Memory.4.6.3\lib\netcoreapp2.1\_._" />
+    <Content Include="packages\System.Memory.4.6.3\lib\netstandard2.1\_._" />
+    <Content Include="packages\System.Memory.4.6.3\PACKAGE.md" />
+    <Content Include="packages\System.Memory.4.6.3\System.Memory.4.6.3.nupkg" />
+    <Content Include="packages\System.Numerics.Vectors.4.6.1\.signature.p7s" />
+    <Content Include="packages\System.Numerics.Vectors.4.6.1\buildTransitive\net461\System.Numerics.Vectors.targets" />
+    <Content Include="packages\System.Numerics.Vectors.4.6.1\buildTransitive\net462\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.6.1\lib\netcoreapp2.0\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.6.1\lib\netstandard2.1\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.6.1\PACKAGE.md" />
+    <Content Include="packages\System.Numerics.Vectors.4.6.1\System.Numerics.Vectors.4.6.1.nupkg" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.6.1.2\.signature.p7s" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.6.1.2\buildTransitive\net461\System.Runtime.CompilerServices.Unsafe.targets" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.6.1.2\buildTransitive\net462\_._" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.6.1.2\buildTransitive\net6.0\_._" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.6.1.2\buildTransitive\netcoreapp2.0\System.Runtime.CompilerServices.Unsafe.targets" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.6.1.2\lib\net7.0\_._" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.6.1.2\PACKAGE.md" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.6.1.2\System.Runtime.CompilerServices.Unsafe.6.1.2.nupkg" />
+    <Content Include="packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\.signature.p7s" />
+    <Content Include="packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\MonoAndroid10\_._" />
+    <Content Include="packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\MonoTouch10\_._" />
+    <Content Include="packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\xamarinios10\_._" />
+    <Content Include="packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\xamarinmac20\_._" />
+    <Content Include="packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\xamarintvos10\_._" />
+    <Content Include="packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\xamarinwatchos10\_._" />
+    <Content Include="packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\ref\MonoAndroid10\_._" />
+    <Content Include="packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\ref\MonoTouch10\_._" />
+    <Content Include="packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\ref\xamarinios10\_._" />
+    <Content Include="packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\ref\xamarinmac20\_._" />
+    <Content Include="packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\ref\xamarintvos10\_._" />
+    <Content Include="packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\ref\xamarinwatchos10\_._" />
+    <Content Include="packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\System.Runtime.InteropServices.RuntimeInformation.4.3.0.nupkg" />
+    <Content Include="packages\System.Security.Cryptography.Pkcs.8.0.2\.signature.p7s" />
+    <Content Include="packages\System.Security.Cryptography.Pkcs.8.0.2\buildTransitive\net461\System.Security.Cryptography.Pkcs.targets" />
+    <Content Include="packages\System.Security.Cryptography.Pkcs.8.0.2\buildTransitive\net462\_._" />
+    <Content Include="packages\System.Security.Cryptography.Pkcs.8.0.2\buildTransitive\net6.0\_._" />
+    <Content Include="packages\System.Security.Cryptography.Pkcs.8.0.2\buildTransitive\netcoreapp2.0\System.Security.Cryptography.Pkcs.targets" />
+    <Content Include="packages\System.Security.Cryptography.Pkcs.8.0.2\System.Security.Cryptography.Pkcs.8.0.2.nupkg" />
+    <Content Include="packages\System.Text.Encodings.Web.10.0.3\.signature.p7s" />
+    <Content Include="packages\System.Text.Encodings.Web.10.0.3\buildTransitive\net461\System.Text.Encodings.Web.targets" />
+    <Content Include="packages\System.Text.Encodings.Web.10.0.3\buildTransitive\net462\_._" />
+    <Content Include="packages\System.Text.Encodings.Web.10.0.3\buildTransitive\net8.0\_._" />
+    <Content Include="packages\System.Text.Encodings.Web.10.0.3\buildTransitive\netcoreapp2.0\System.Text.Encodings.Web.targets" />
+    <Content Include="packages\System.Text.Encodings.Web.10.0.3\PACKAGE.md" />
+    <Content Include="packages\System.Text.Encodings.Web.10.0.3\System.Text.Encodings.Web.10.0.3.nupkg" />
+    <Content Include="packages\System.Text.Json.10.0.3\.signature.p7s" />
+    <Content Include="packages\System.Text.Json.10.0.3\buildTransitive\net461\System.Text.Json.targets" />
+    <Content Include="packages\System.Text.Json.10.0.3\buildTransitive\net462\System.Text.Json.targets" />
+    <Content Include="packages\System.Text.Json.10.0.3\buildTransitive\net8.0\System.Text.Json.targets" />
+    <Content Include="packages\System.Text.Json.10.0.3\buildTransitive\netcoreapp2.0\System.Text.Json.targets" />
+    <Content Include="packages\System.Text.Json.10.0.3\buildTransitive\netstandard2.0\System.Text.Json.targets" />
+    <Content Include="packages\System.Text.Json.10.0.3\PACKAGE.md" />
+    <Content Include="packages\System.Text.Json.10.0.3\System.Text.Json.10.0.3.nupkg" />
+    <Content Include="packages\System.Threading.Channels.10.0.3\.signature.p7s" />
+    <Content Include="packages\System.Threading.Channels.10.0.3\buildTransitive\net461\System.Threading.Channels.targets" />
+    <Content Include="packages\System.Threading.Channels.10.0.3\buildTransitive\net462\_._" />
+    <Content Include="packages\System.Threading.Channels.10.0.3\buildTransitive\net8.0\_._" />
+    <Content Include="packages\System.Threading.Channels.10.0.3\buildTransitive\netcoreapp2.0\System.Threading.Channels.targets" />
+    <Content Include="packages\System.Threading.Channels.10.0.3\PACKAGE.md" />
+    <Content Include="packages\System.Threading.Channels.10.0.3\System.Threading.Channels.10.0.3.nupkg" />
+    <Content Include="packages\System.Threading.RateLimiting.8.0.0\.signature.p7s" />
+    <Content Include="packages\System.Threading.RateLimiting.8.0.0\buildTransitive\net461\System.Threading.RateLimiting.targets" />
+    <Content Include="packages\System.Threading.RateLimiting.8.0.0\buildTransitive\net462\_._" />
+    <Content Include="packages\System.Threading.RateLimiting.8.0.0\buildTransitive\net6.0\_._" />
+    <Content Include="packages\System.Threading.RateLimiting.8.0.0\buildTransitive\netcoreapp2.0\System.Threading.RateLimiting.targets" />
+    <Content Include="packages\System.Threading.RateLimiting.8.0.0\System.Threading.RateLimiting.8.0.0.nupkg" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.6.3\.signature.p7s" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.6.3\buildTransitive\net461\System.Threading.Tasks.Extensions.targets" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.6.3\buildTransitive\net462\_._" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.6.3\lib\netcoreapp2.1\_._" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.6.3\lib\netstandard2.1\_._" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.6.3\PACKAGE.md" />
+    <Content Include="packages\System.Threading.Tasks.Extensions.4.6.3\System.Threading.Tasks.Extensions.4.6.3.nupkg" />
+    <Content Include="packages\System.ValueTuple.4.6.2\.signature.p7s" />
+    <Content Include="packages\System.ValueTuple.4.6.2\buildTransitive\net461\System.ValueTuple.targets" />
+    <Content Include="packages\System.ValueTuple.4.6.2\buildTransitive\net462\_._" />
+    <Content Include="packages\System.ValueTuple.4.6.2\buildTransitive\net471\System.ValueTuple.targets" />
+    <Content Include="packages\System.ValueTuple.4.6.2\build\net471\System.ValueTuple.targets" />
+    <Content Include="packages\System.ValueTuple.4.6.2\lib\net471\_._" />
+    <Content Include="packages\System.ValueTuple.4.6.2\lib\netcoreapp2.0\_._" />
+    <Content Include="packages\System.ValueTuple.4.6.2\lib\netstandard2.0\_._" />
+    <Content Include="packages\System.ValueTuple.4.6.2\PACKAGE.md" />
+    <Content Include="packages\System.ValueTuple.4.6.2\System.ValueTuple.4.6.2.nupkg" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -219,7 +1272,10 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="bin\roslyn\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -252,10 +1308,15 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets'))" />
+    <Error Condition="!Exists('packages\Microsoft.Data.SqlClient.SNI.7.1.2\build\net462\Microsoft.Data.SqlClient.SNI.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.Data.SqlClient.SNI.7.1.2\build\net462\Microsoft.Data.SqlClient.SNI.targets'))" />
+    <Error Condition="!Exists('packages\System.ValueTuple.4.6.2\build\net471\System.ValueTuple.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\System.ValueTuple.4.6.2\build\net471\System.ValueTuple.targets'))" />
   </Target>
+  <Import Project="packages\Microsoft.Data.SqlClient.SNI.7.1.2\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('packages\Microsoft.Data.SqlClient.SNI.7.1.2\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />
+  <Import Project="packages\System.ValueTuple.4.6.2\build\net471\System.ValueTuple.targets" Condition="Exists('packages\System.ValueTuple.4.6.2\build\net471\System.ValueTuple.targets')" />
 </Project>

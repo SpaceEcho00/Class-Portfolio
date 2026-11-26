@@ -45,5 +45,10 @@ namespace Class_Portfolio
             }
             litOutput.Text = "Final Score\t" + final + "\tGrade\t" + grade;
         }
+
+        protected void txtCatMark_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }   

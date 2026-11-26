@@ -56,5 +56,10 @@ namespace Class_Portfolio
             //display output
             lblJobCategory.Text = result;
         }
+
+        protected void ddlSelectJobCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

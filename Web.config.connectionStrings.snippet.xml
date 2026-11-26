@@ -1,0 +1,7 @@
+<!-- Merge this section into the existing <configuration> element in Web.config.
+     Do not add a second <configuration> or duplicate <connectionStrings> section. -->
+<connectionStrings>
+    <add name="ClassPortfolioDb"
+         connectionString="Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=ClassPortfolioDB;Integrated Security=True;Connect Timeout=30"
+         providerName="System.Data.SqlClient" />
+</connectionStrings>

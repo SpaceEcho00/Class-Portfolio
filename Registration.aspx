@@ -7,7 +7,7 @@
     <br />
 </p>
     <p>
-        <asp:TextBox ID="TxtName" runat="server" Width="128px" Height="16px"></asp:TextBox>
+        <asp:TextBox ID="TxtName" runat="server" Width="128px" Height="16px" OnTextChanged="TxtName_TextChanged"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Full Name is  required" ForeColor="Red" ControlToValidate="TxtName" ValidationGroup="vgRegistration">*</asp:RequiredFieldValidator>
 </p>
 <p>

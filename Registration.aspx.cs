@@ -13,5 +13,10 @@ namespace Class_Portfolio
         {
 
         }
+
+        protected void TxtName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
